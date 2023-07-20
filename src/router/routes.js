@@ -5,9 +5,7 @@ const routes = express();
 
 
 routes.post('/cadastro', dados )
-routes.get('/usuarios', usuarios)
-routes.get('/', (req, res) => {
-    res.send("Servidor ON")
-})
+routes.get('/', usuarios)
+
 
 module.exports = routes;
