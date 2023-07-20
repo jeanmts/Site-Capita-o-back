@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js",
-    "vercel-build": "npm prisma migrate deploy" 
+    "dev": "nodemon ./src/index.js"
   },
   "keywords": [],
   "author": "",
