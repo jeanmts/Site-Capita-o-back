@@ -4,7 +4,7 @@ const dados = async ( req ,res) => {
     const {nome, email, telefone, cpf} = req.body
     try {
         if (!nome || !telefone || !cpf || !email) {
-            res.json({message: "Todos os campos são obrigatorios"})
+            res.status(400).json({message: "Todos os campos são obrigatorios"})
         }
         const query = "insert into dadosdousuario (nome, email, telefone, cpf) values ($1, $2, $3, $4)";
         const params = [nome, email, telefone, cpf];
